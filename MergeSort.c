@@ -5,6 +5,7 @@ clock_t start,stop;
 double duration;
 int a[SiZE];
 int atemp[SiZE];
+
 void merge(int a[],int lo,int mid,int hi){
     int i = lo;
     int j = mid +1;
@@ -32,6 +33,7 @@ void merge(int a[],int lo,int mid,int hi){
 
     return ; 
 }
+
 void sort(int a[],int lo,int hi){
     if (hi<=lo) {
         return ;
@@ -44,6 +46,7 @@ void sort(int a[],int lo,int hi){
     merge(a,lo,mid,hi);
 
 }
+
 int main() {
     int n =1; 
     for(int i=0;i<SiZE;i++) {
